@@ -1,5 +1,7 @@
 package com.movies.exp2_s4_briam_carrasco.model;
 
+import org.springframework.hateoas.RepresentationModel;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "TB_MOVIES")
-public class Movies {
+public class Movies extends RepresentationModel<Movies> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
