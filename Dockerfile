@@ -7,6 +7,6 @@ COPY Wallet_KVB5FJFLZY575QGO /app/oracle_wallet
 
 EXPOSE 8080
 
-CMD ["java", ".jar", "app.jar"]
+CMD ["java", "-jar", "app.jar"]
 
 
